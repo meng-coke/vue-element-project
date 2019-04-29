@@ -6,7 +6,24 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return{
+      fullHeight: document.documentElement.clientHeight
+    }
+  },
+  created:function () {
+
+  },
+  mounted: function () {
+    const that = this
+    window.onresize = () => {
+      return (() => {
+        window.fullHeight = document.documentElement.clientHeight
+        that.fullHeight = window.fullHeight
+      })()
+    }
+  },
 }
 </script>
 
@@ -16,7 +33,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  width: 100%;
+  min-width:1204px;
+  height: 100%;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
