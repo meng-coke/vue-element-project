@@ -26,7 +26,10 @@ router.beforeEach((to, from, next) => {
   if (to.matched.some(
       record => record.meta.requiresAuth)&& (!knock_knock || knock_knock === null)) {
 
-    window.location.href = '/loginModel';
+    next({
+      path: '/loginModel',
+      query: { redirect: to.fullPath }
+    })
 
   } else {
     next()

@@ -140,11 +140,11 @@
 		text-align: left;
 		position: fixed;
 		display: block;
-		width: 245px;
+		width: 180px;
 		z-index: 100;
 		left: 0;
 		bottom: 0;
-		top: 45px;
+		top: 70px;
 		height: 100% - 45px;
 		background-color: #495b6c;
 	}

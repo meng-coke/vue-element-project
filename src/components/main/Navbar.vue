@@ -63,7 +63,7 @@ export default {
 .navbar {
   width: 100%;
   min-width: 1240px;
-  height: 45px;
+  height: 70px;
   background-color: #2b333c;
   color: #ffffff;
   display: table;
@@ -195,5 +195,9 @@ export default {
 
 .el-dropdown-menu__item a:hover {
     color: #48576a;
+}
+.el-dropdown-link{
+  color: #fff;
+  cursor: pointer;
 }
 </style>

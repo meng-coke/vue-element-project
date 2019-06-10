@@ -62,7 +62,8 @@ export default {
           // }
         })
 
-        this.$router.push({ path: '/' })
+          localStorage.setItem('knock_knock', 'uuu');
+        this.$router.push({ path: '/business' })
       }else{
         this.$message({
           type: 'warning',

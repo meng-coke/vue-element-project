@@ -33,26 +33,25 @@
 
 <style scoped>
     .main-box {
-        background-color: #495b6c;
+        /*background-color: #495b6c;*/
         min-width: 1200px;
     }
 
     .main-box .sidebar {
-        width: 245px;
-        min-width: 245px;
+        width: 180px;
+        min-width: 180px;
     }
 
     .main-box .content {
         color: black;
-        margin-left: 245px;
-        margin-top: 45px;
-        background-color: #f9f9f9;
+        margin: 80px 10px 0 190px;
+        background-color: #fff;
         overflow-y: auto;
         overflow-x: hidden;
     }
 
     .main-box .content > div {
-        padding: 20px;
+        padding: 30px 30px 0;
     }
 
     .main-box .customer-service {
